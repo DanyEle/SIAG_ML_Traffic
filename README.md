@@ -12,10 +12,10 @@ weather station.
 
 ![Frontend screenshot](./readme_imgs/web_interface.PNG)
 
-##Machine Learning models used:
+## Machine Learning models used:
 
 
-###Classification:
+### Classification:
 
 Approx. 95% classification accuracy into the four traffic categories
 
@@ -24,9 +24,7 @@ Approx. 95% classification accuracy into the four traffic categories
 - Random Forest
 - Ensemble of the three considered models
 
-###Regression:
-
-Approx. 80% 
+### Regression:
 
 - Fully-connected Neural Network
 
