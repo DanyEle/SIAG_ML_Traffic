@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Südtirol Traffic</title>
+
+            <link rel="icon" href="./static/imgs/favicon_traffico.ico" type="image/x-icon"/>
+            <!-- My own stylesheet -->
+            <link type="text/css" rel="stylesheet" href="./static/css/style.css">
+
+            <!-- External CSS dependencies, imported locally !-->
+
+            <link href="./static/css/bootstrap-combined.min.css" rel="stylesheet">
+            <link rel="stylesheet" type="text/css" media="screen" href="./static/css/bootstrap-datetimepicker.min.css">
+            
+            {{fullmap.js}}
+
+
+            <!-- External Javascript dependencies, imported locally !-->
+            <script type="text/javascript" src="./static/javascript/jquery-latest.js"></script>
+            <script type="text/javascript" src="./static/javascript/bootstrap.min.js"></script>
+            <script type="text/javascript" src="./static/javascript/bootstrap-datetimepicker.min.js"> </script>
+
+		
+    </head>
+    <body>
+           
+     <center>
+    
+          <h1>Südtirol Traffic  <img id="title-logo"= src="./static/imgs/logo_traffico.png"> </h1>
+          		  
+          <hr>
+    
+           <span class="traffic-description"> Please select a date and time in 2018 or select
+           a date and time in the next 5 days to view the traffic level of all traffic stations in South Tyrol: </span>
+
+           <br>
+           
+           <br>
+           
+           <div class="well">
+          <div id="datetimepicker4" class="input-append">
+            Prediction date: <input id="input_date_datepicker" data-format="yyyy-MM-dd" type="text"></input>
+            <span class="add-on">
+              <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+              </i>
+            </span>
+          </div>
+        </div>
+        
+        
+        <!-- Let's display the current value of the slider -->
+        
+        
+        
+       <div class="slidecontainer">
+          00:00 <input type="range" min="1" max="1439" value="200" class="slider" id="myRange"> 23:59
+           <p id="displayValue">
+           </br>
+               [<span id="hours">min</span> : <span id="minutes">hour</span>]
+           </p>
+        </div>
+
+    </br>
+
+        
+        <select id="direction">
+          <option value="direction_1">Direction 1</option>
+          <option value="direction_2">Direction 2</option>
+        </select>
+    
+    </center> 
+    
+     {{ fullmap.html }}
+
+
+    <script>
+         list_past_all_stations = {{ list_past_all_stations }}; 
+         list_predictions_all_stations = {{ list_predictions_all_stations }};
+    </script>
+
+
+        <script type="text/javascript" src="{{url_for('static', filename='javascript/shared_functions.js') }}"></script>    
+
+        <script type="text/javascript" src="{{url_for('static', filename='javascript/markers_date_time.js') }}"></script>    
+
+  
+    </body>
+</html>
+

@@ -1,0 +1,5 @@
+#Ignore files contained in the folder __pycache__
+__pycache__/
+./s/__pycache__
+.coverage
+.pytest_cache/

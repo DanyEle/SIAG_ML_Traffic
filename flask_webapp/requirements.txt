@@ -1,0 +1,8 @@
+pandas==0.25.3
+datetime
+requests==2.22.0
+joblib==0.14.1
+flask==1.1.1
+flask_googlemaps==0.2.6
+apscheduler==3.6.3
+azure-storage-blob==0.37.1

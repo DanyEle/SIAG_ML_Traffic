@@ -1,0 +1,57 @@
+    .traffic-description {
+        font-size: 20px;
+    }
+    
+    #displayValue {
+        font-size:18px;
+    
+    }
+
+    #title-logo {
+        height:50px;
+        width:50px;
+
+    }
+
+    .color-normal-traffic
+    {
+        background-color: rgb(99, 214, 104);
+    }
+
+    .color-moderate-traffic
+    {
+        background-color: rgb(240, 125, 2);
+    }
+
+    .color-high-traffic
+    {
+        background-color: rgb(230, 0, 0);
+    }
+
+    .color-extreme-traffic
+    {
+        background-color: rgb(158, 19, 19);
+    }
+
+    .bold
+    {
+        font-weight:bold;
+    }
+
+    body
+    {
+        font-size: 16px;
+    }
+
+    #table_heatmap
+    {
+       margin-top: 50px;
+       margin-right: 120px;
+       margin-left: 100px;
+       width:90%;
+    }
+
+    a
+    {
+        font-size:16px;
+    }
