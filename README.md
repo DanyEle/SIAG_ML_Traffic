@@ -12,6 +12,24 @@ weather station.
 
 ![Frontend screenshot](./readme_imgs/web_interface.PNG)
 
+##Machine Learning models used:
+
+
+###Classification:
+
+Approx. 95% classification accuracy into the four traffic categories
+
+- Decision Tree
+- KNN
+- Random Forest
+- Ensemble of the three considered models
+
+###Regression:
+
+Approx. 80% 
+
+- Fully-connected Neural Network
+
 
 ## Setup - Python and dependencies:
 
