@@ -47,11 +47,9 @@ then follow the following procedures to proceed with the training and inference 
 ### 1. Training - Once
 
 It is sufficient to run the training algorithms once to generate models, which will be output to the 
-'Stations_Models_2018'. Already fitted and serialized versions of the models, scalers and encoders
- is contained in the 'Stations_Models_2018' 
+'d/Stations_Models_2018'. 
 
 ```bash
-cd python_ml_traffico_train_inference
 python run_operations.py train
 ```
 
@@ -67,7 +65,6 @@ In order to run the inference phase of the ML algorithms, run the following line
 is required in order to access the Province of Bolzano's weather forecast webservice.
 
 ```bash
-cd python_ml_traffico_train_inference
 python run_operations.py inference
 ```
 
@@ -86,7 +83,6 @@ have been installed correctly, and manually inspecting them can provide informat
 functioning. 
 
 ```
-cd python_ml_traffico
 pytest --cov --ignore=app.py,run_operations.py . 
 
 ```
@@ -202,7 +198,7 @@ Finally, in order to run the Flask frontend and visualize the past data, along w
 to start up the Flask webservice on your IP. Such IP will be reached by all IP addresses within the SIAG intranet.
 
 ```bash
-cd %USERPROFILE%\Documents\python_ml_traffico
+cd flask_web_app
 python app.py
 ```
 
@@ -218,7 +214,9 @@ Open up a browser and type in the address and port shown in the console where th
 You should finally be able to access the Südtirol traffic service! In my case, I just type in my browser the
 following address:
 
+```bash
 http://<localhost>:5000/
+```
 
 If everything went well, you will be able to view the traffic level in South Tyrol! Good job!
 
