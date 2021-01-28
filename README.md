@@ -3,7 +3,8 @@
 
 
 This prototype aims at showcasing the traffic evolution in the year 2018 on the streets of the Autonomous
-Province of Bolzano-Bozen and create Machine Learning models that are able to capture the traffic level.
+Province of Bolzano-Bozen and create Machine Learning models that are able to model the main trends
+and predict the future traffic level based on week of the day, hour and weather. 
 
 The data used stems from 71 traffic sensors scattered all over the main streets of the Autonomous Province
 of Bolzano-Bozen and pre-processed in SAS, along with the weather data coming from the corresponding closest 
@@ -224,9 +225,9 @@ If everything went well, you will be able to view the traffic level in South Tyr
 
 ## Troubleshooting
 
-*Issue*: The webservice console gets stuck and does not process any incoming request.
+**Issue**: The webservice console gets stuck and does not process any incoming request.
 
-*Solution*:  Do not click with your mouse on the console where the flask frontend was initialized, or the Flask webservice will 
+**Solution**:  Do not click with your mouse on the console where the flask frontend was initialized, or the Flask webservice will 
 get blocked until you click again or press any key. This is a default behaviour of the command prompt in Windows 10.
 
 Such behaviour can be disabled by right-clicking on the command prompt bar top bar, selecting "Defaults"/"Predefinite"
