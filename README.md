@@ -44,6 +44,13 @@ If you want to check if Python was successfully installed, press Windows + R, an
 In the command line prompt, type "python". If the Python interpreter for Python 3.6.8 is launched,
 then you have successfully installed Python 3.6.8, as shown in the following picture.
 
+Alternatively, install Conda as package manager and create a new environment for Python 3.6:
+
+```bash
+conda create -n <env_name> python=3.6
+```
+
+
 
 ### 2. Python Packages for Training and inference
 
@@ -264,8 +271,8 @@ By default, the installation directory of pip is C:\Users\<username>\AppData\Loc
 
 **Issue**: No package can be found for Tensorflow.
 
-**Solution**: You have a too new version of Python (EX: Python3.8.0). Uninstall your current version of Python, and install
-Python 3.6.8.
+**Solution**: You have a too new version of Python (EX: Python 3.8.0). Uninstall your current version of Python, and install
+Python 3.6.8 or Python 
 
 
 
