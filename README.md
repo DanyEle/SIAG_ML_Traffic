@@ -1,10 +1,10 @@
-# Südtirol Traffic - Machine Learning Prototype
+# SÃ¼dtirol Traffic - Machine Learning Prototype
 
 
 
-This prototype aims at showcasing the traffic evolution in the year 2018 on the streets of the Autonomous
-Province of Bolzano-Bozen and create Machine Learning models that are able to model the main trends
-and predict the future traffic level based on week of the day, hour and weather. 
+This machine learning prototype aims at modelling the traffic evolution in the year 2018 on the streets of the Autonomous
+Province of Bolzano-Bozen and training Machine Learning models capable of predicting the main trends
+concerning road-based traffic levels based on week of the day, hour and weather. 
 
 The data used stems from 71 traffic sensors scattered all over the main streets of the Autonomous Province
 of Bolzano-Bozen and pre-processed in SAS, along with the weather data coming from the corresponding closest 
@@ -234,7 +234,7 @@ If the Flask frontend has been initialized successfully, you should see the foll
 ### 2. Access the Flask Frontend
 
 Open up a browser and type in the address and port shown in the console where the Flask frontend was started.
-You should finally be able to access the Südtirol traffic service! In my case, I just type in my browser the
+You should finally be able to access the SÃ¼dtirol traffic service! In my case, I just type in my browser the
 following address:
 
 ```bash
@@ -252,7 +252,7 @@ If everything went well, you will be able to view the traffic level in South Tyr
 get blocked until you click again or press any key. This is a default behaviour of the command prompt in Windows 10.
 
 Such behaviour can be disabled by right-clicking on the command prompt bar top bar, selecting "Defaults"/"Predefinite"
-or just for the current shell by selecting "Properties" and then unchecking the checkbox "QuickEdit Mode" / "Modalità modifica rapida", 
+or just for the current shell by selecting "Properties" and then unchecking the checkbox "QuickEdit Mode" / "ModalitÃ  modifica rapida", 
 as shown in the following picture:
 
 ![Web Interface](./readme_imgs/modifica_rapida_cmd.PNG)
